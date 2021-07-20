@@ -8,7 +8,7 @@ from Functions.funtions import open, salirapp, licencia, acercade
 
 
 root=Tk()
-root.geometry("500x500")
+root.geometry("500x350")
 root.title("YouDown By Anco")
 menu_bar=Menu(root)
 root.config(menu=menu_bar, width=100, height=100, background="grey")
