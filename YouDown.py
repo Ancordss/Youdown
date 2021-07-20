@@ -66,14 +66,13 @@ linkvid=StringVar()
 tittle=StringVar()
 author=StringVar()
 
-print(linkvid)
-
 def generate():
     try:
         videoURL=linkvid.get()
         v=Video(videoURL)
         tittle.set(v.title)
         author.set(v.author)
+        
     except:
         messagebox.showwarning("YouDown", "Porfavor ingresa un Link")
 
