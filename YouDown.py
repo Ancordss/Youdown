@@ -9,8 +9,8 @@ from Functions.funtions import open, salirapp, licencia, acercade
 
 root=Tk()
 root.geometry("500x350")
-root.title("YouDown By Anco")
-menu_bar=Menu(root)
+root.title("YouDown")
+menu_bar=Menu(root, background="grey", border=0)
 root.config(menu=menu_bar, width=100, height=100, background="grey")
 
 
@@ -46,7 +46,7 @@ frame2.config(background="grey")
 frame2.pack()
 
 #------------------labels--------------
-linklabel=Label(frame2, text="Ingrese el link:", background="grey", font="arial 12 bold")
+linklabel=Label(frame2, text="Ingrese el link:", background="grey", font="arial 12 bold", border=0)
 linklabel.grid(row=0, column=0, sticky="e", padx=3, pady=1)
 
 
@@ -130,13 +130,13 @@ def downloadhight():
 
 
 #---------------entrada de link-----------frame3
-picturelink=Entry(frame3, width=45, textvariable=linkvid,)
+picturelink=Entry(frame3, width=45, textvariable=linkvid, border=0)
 picturelink.grid(row=0, column=1, padx=10, pady=10)
 
-generatebutton=Button(frame3, text="Load", font="arial 12 bold", bg="grey", command=generate)
+generatebutton=Button(frame3, text="Load", font="arial 12 bold", bg="grey", background="grey", border=0, command=generate)
 generatebutton.grid(row=0, sticky="w", column=2, padx=5, pady=5)
 
-inf_video=Entry(frame3, width=40, textvariable=tittle, background="grey")
+inf_video=Entry(frame3, width=40, textvariable=tittle, background="grey", border=0)
 inf_video.grid(row=1, column=1, padx=10, pady=10)
 
 
@@ -154,13 +154,13 @@ Frame4_1=Frame(root)
 Frame4_1.config(background="grey")
 Frame4_1.pack()
       
-DownloadLow=Button(Frame4_1,text="Low", font="arial 12 bold", bg ="grey", command=downloadlow)
+DownloadLow=Button(Frame4_1,text="Low", font="arial 12 bold", bg ="grey", border=0, command=downloadlow)
 DownloadLow.grid(row=0, column=0, sticky="n", padx=10, pady=10, )
 
-Downloadmid=Button(Frame4_1,text="Mid", font="arial 12 bold", bg ="grey", command=downloadmid)
+Downloadmid=Button(Frame4_1,text="Mid", font="arial 12 bold", bg ="grey", border=0, command=downloadmid)
 Downloadmid.grid(row=0, column=1, sticky="n", padx=10, pady=10, )
 
-Downloadhight=Button(Frame4_1,text="Hight", font="arial 12 bold", bg ="grey", command=downloadhight)
+Downloadhight=Button(Frame4_1,text="Hight", font="arial 12 bold", bg ="grey", border=0, command=downloadhight)
 Downloadhight.grid(row=0, column=2, sticky="n", padx=10, pady=10, )
 
 
