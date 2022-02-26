@@ -8,7 +8,8 @@ from youtube import Video
 
 def open():# open a download library
     try:
-        os.system("nemo ~/Downloads")
+        #os.system("nemo ~/Downloads") linux
+        os.starfile('c:/')
     except:
         messagebox.showerror("YouDown", "Ups algo a fallado,\n busca en donde esta el archivo")
 

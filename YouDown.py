@@ -37,7 +37,7 @@ frame1.pack()
 
 #-----------------LOGOLABEL-----------------
 
-myimg=ImageTk.PhotoImage(Image.open("/media/anco/Disk/Progra/Youtobe Dowloader/1.png"))
+myimg=ImageTk.PhotoImage(Image.open("1.png"))
 mylabimg=Label(frame1, background="black", image=myimg)
 mylabimg.pack()
 
@@ -74,7 +74,7 @@ def generate():
         v=Video(videoURL)
         tittle.set(v.title)
         author.set(v.author)
-        
+
     except:
         messagebox.showwarning("YouDown", "Porfavor ingresa un Link")
 
@@ -84,7 +84,7 @@ def downloadlow():
         link=linkvid.get()
         v= Video(link).streams
         v.fflow.download()
-   
+
 
         messagebox.showinfo("YouDown", "Descarga Reallizada con exito")
         messagebox.showinfo("YouDown", "if the download is webm try again\nthis error will be solved soon")
@@ -155,7 +155,7 @@ label_info.grid(row=0, sticky="s", padx=3, pady=3)
 Frame4_1=Frame(root)
 Frame4_1.config(background="grey")
 Frame4_1.pack()
-      
+
 DownloadLow=Button(Frame4_1,text="Low", font="arial 12 bold", bg ="grey", border=0, command=downloadlow)
 DownloadLow.grid(row=0, column=0, sticky="n", padx=10, pady=10, )
 
@@ -168,5 +168,3 @@ Downloadhight.grid(row=0, column=2, sticky="n", padx=10, pady=10, )
 
 
 root.mainloop()
-
-
